@@ -64,9 +64,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5DA590DA51714A6E9D8FCABA363A9490 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4B437962F4AF4ABD8AE9AB563D8B8E0F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5D0C4B74E88945078E7A24881E6ADE6D }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A72816C5E2C54062904D2AAC7828B520 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_992B2D3E37E04DEE8B4DBFBC07E71ABD }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AA1753560828447FAD96EFEC315FE0E6 }}
 
       - name: "Deploy to Azure Web App"
         uses: azure/webapps-deploy@v2
@@ -74,4 +74,4 @@ jobs:
         with:
           app-name: "predictModelAPI"
           slot-name: "Production"
-          startup-command: "gunicorn --bind 0.0.0.0:19890 --timeout 600 app:server"
+          startup-command: "gunicorn --bind 0.0.0.0:19890 --timeout 600 server:server"
