@@ -75,4 +75,5 @@ jobs:
         with:
           app-name: 'predictModelAPI'
           slot-name: 'Production'
+          startup-command: 'gunicorn --bind 0.0.0.0:19890 --timeout 600 app:server'
           
