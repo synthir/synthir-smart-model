@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pickle
 import pandas
-# import socket
+#import socket
 # from sklearn.preprocessing import OneHotEncoder
 
 class Predictor:
