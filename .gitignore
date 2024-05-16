@@ -1,0 +1,13 @@
+# data pre-preocessing
+/dataprocessing
+
+# data set file
+**.csv
+
+# Github files
+.github/**
+
+# History
+.history/**
+
+
